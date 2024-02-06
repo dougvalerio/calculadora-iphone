@@ -124,22 +124,22 @@
 
       .operations {
         margin: 0px 15px;
-        height: 10rem;
+        height: 12rem;
   
         .prev-calc {
-          font-weight: 300;
+          font-size: 30px;
         }
   
         .result-calc {
           font-weight: 300;
-          font-size: 50px;
+          font-size: 65px;
         }
       }
   
       .btn-container {
         height: 22rem;
-        gap: 8px;
-        margin: 10px;
+        gap: 10px;
+        margin: 10px 5px 10px 10px;
   
         button {
           font-size: 20px;
@@ -151,6 +151,14 @@
         button:not(:nth-child(17)) {
           width: 3.5em;
         }  
+
+        button:nth-child(17) {
+          padding-left: 30px;
+        }  
+
+        button p {
+          font-size: 30px;
+        }
       }
     }
   }
