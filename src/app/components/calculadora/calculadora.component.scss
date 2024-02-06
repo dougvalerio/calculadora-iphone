@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .calc {
+    width: 16rem;
+    background-color: var(--color-primary);
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+
+      p {
+        color: var(--color-secondary);
+        font-size: 12px;
+      }
+
+      .icons {
+        display: flex;
+        gap: 2px;
+
+        img {
+          width: 12px;
+        }
+      }
+    }
+
+    .operations {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: var(--color-secondary);
+      text-align: end;
+      margin: 0px 15px;
+      height: 150px;
+
+      .prev-calc {
+        font-weight: 300;
+      }
+
+      .result-calc {
+        font-weight: 300;
+        font-size: 50px;
+      }
+    }
+
+    .btn-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+      margin: 10px;
+
+      button {
+        font-size: 15px;
+        // width: 40px;
+        height: 3.5em;
+        border-radius: 100px;
+        cursor: pointer;
+      }
+
+      button:not(:nth-child(17)) {
+        width: 3.5em;
+      }  
+
+      button:nth-child(17) {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }  
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      button p {
+        font-size: 20px;
+      }
+
+      .btn-top {
+        background-color: var(--btn-top);
+      }
+
+      .number {
+        background-color: var(--btn-number);
+        color: var(--color-secondary);
+      }
+      .btn-0 {
+        grid-column: span 2;
+        border-radius: 50px 50px 50px 50px;
+      }
+
+      .operators {
+        background-color: var(--btn-operators);
+        color: var(--color-secondary);
+      }
+      
+    }
+  }
+
+  @media (max-width: 500px) {
+    .calc {
+      height: 100vh;
+      width: 100vh;
+
+      .top {
+        padding: 10px;
+  
+        p {
+          font-size: 17px;
+        }
+  
+        .icons {
+          gap: 5px;
+  
+          img {
+            width: 17px;
+          }
+        }
+      }
+
+      .operations {
+        margin: 0px 15px;
+        height: 10rem;
+  
+        .prev-calc {
+          font-weight: 300;
+        }
+  
+        .result-calc {
+          font-weight: 300;
+          font-size: 50px;
+        }
+      }
+  
+      .btn-container {
+        height: 22rem;
+        gap: 8px;
+        margin: 10px;
+  
+        button {
+          font-size: 20px;
+          height: 3.5em;
+          border-radius: 100px;
+          cursor: pointer;
+        }
+  
+        button:not(:nth-child(17)) {
+          width: 3.5em;
+        }  
+      }
+    }
+  }
+}

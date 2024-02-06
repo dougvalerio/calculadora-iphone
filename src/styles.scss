@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import './reset.scss';
+
+:root {
+  --color-primary: #000;
+  --color-secondary: #FFF;
+  --btn-number: #333;
+  --btn-operators: #FF9F0A;
+  --btn-top: #A5A5A5;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
